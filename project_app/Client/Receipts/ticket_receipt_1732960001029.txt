@@ -1,0 +1,9 @@
+=== Ticket Receipt ===
+Ticket ID: null
+Flight ID: 7
+Passenger ID: 11
+Seat: 8
+Class: ECONOMY
+Price: 598.0
+Status: Closed
+Date: 2024-11-30T12:46:41.023768800

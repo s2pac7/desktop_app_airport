@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.DatePicker?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane prefHeight="600.0" prefWidth="500.0" style="-fx-background-color: #B0C4DE; -fx-border-radius: 20px;" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controllers.EditPassengerController">
+   <children>
+      <Button fx:id="editPassengerButton" layoutX="75.0" layoutY="455.0" mnemonicParsing="false" prefHeight="60.0" prefWidth="350.0" style="-fx-background-color: #ADD8E6; -fx-border-color: #1E90FF; -fx-border-radius: 5;" text="Редактировать">
+         <font>
+            <Font size="28.0" />
+         </font>
+      </Button>
+      <Button fx:id="backButton" layoutX="75.0" layoutY="526.0" mnemonicParsing="false" prefHeight="60.0" prefWidth="350.0" style="-fx-background-color: #ADD8E6; -fx-border-color: #1E90FF; -fx-border-radius: 5;" text="Выйти">
+         <font>
+            <Font size="28.0" />
+         </font>
+      </Button>
+      <Text layoutX="78.0" layoutY="43.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Редактирование пассажира">
+         <font>
+            <Font name="Book Antiqua Italic" size="27.0" />
+         </font>
+      </Text>
+      <VBox layoutX="72.0" layoutY="53.0" prefHeight="250.0" prefWidth="350.0">
+         <children>
+            <TextField fx:id="editNameField" prefHeight="50.0" prefWidth="350.0" promptText="Имя">
+               <font>
+                  <Font size="16.0" />
+               </font>
+               <VBox.margin>
+                  <Insets top="5.0" />
+               </VBox.margin>
+            </TextField>
+            <TextField fx:id="editSurnameField" prefHeight="50.0" prefWidth="400.0" promptText="Фамилия">
+               <font>
+                  <Font size="16.0" />
+               </font>
+               <VBox.margin>
+                  <Insets top="5.0" />
+               </VBox.margin>
+            </TextField>
+            <DatePicker fx:id="editDateOfBirthField" prefHeight="50.0" prefWidth="400.0" promptText="Дата рождения">
+               <VBox.margin>
+                  <Insets top="5.0" />
+               </VBox.margin>
+            </DatePicker>
+            <TextField fx:id="editPassportNumberField" prefHeight="50.0" prefWidth="400.0" promptText="Номер паспорта">
+               <font>
+                  <Font size="16.0" />
+               </font>
+               <VBox.margin>
+                  <Insets top="5.0" />
+               </VBox.margin>
+            </TextField>
+            <HBox spacing="10.0">
+               <VBox.margin>
+                  <Insets top="15.0" />
+               </VBox.margin>
+            </HBox>
+         </children>
+         <padding>
+            <Insets top="15.0" />
+         </padding>
+      </VBox>
+      <TextField fx:id="editPhoneNumberField" layoutX="172.0" layoutY="294.0" prefHeight="50.0" prefWidth="250.0" promptText="(XX) XXX-XXXX">
+         <font>
+            <Font size="16.0" />
+         </font>
+      </TextField>
+      <ComboBox fx:id="countryCodeBox" layoutX="72.0" layoutY="294.0" prefHeight="50.0" prefWidth="100.0" promptText="Код">
+               </ComboBox>
+   </children>
+</AnchorPane>

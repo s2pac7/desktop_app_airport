@@ -1,0 +1,49 @@
+=== Ticket Report ===
+Ticket ID: 1
+Flight ID: 7
+Passenger ID: 11
+Seat: 14
+Class: ECONOMY
+Price: 587.00
+Status: Ñlosed
+---------------------------
+Ticket ID: 2
+Flight ID: 6
+Passenger ID: 11
+Seat: 5
+Class: ECONOMY
+Price: 612.00
+Status: Closed
+---------------------------
+Ticket ID: 3
+Flight ID: 1
+Passenger ID: 11
+Seat: 17
+Class: ECONOMY
+Price: 827.00
+Status: Closed
+---------------------------
+Ticket ID: 4
+Flight ID: 3
+Passenger ID: 11
+Seat: 5
+Class: ECONOMY
+Price: 691.00
+Status: Closed
+---------------------------
+Ticket ID: 5
+Flight ID: 5
+Passenger ID: 17
+Seat: 18
+Class: ECONOMY
+Price: 560.00
+Status: Closed
+---------------------------
+Ticket ID: 6
+Flight ID: 6
+Passenger ID: 11
+Seat: 11
+Class: ECONOMY
+Price: 793.00
+Status: cancel
+---------------------------

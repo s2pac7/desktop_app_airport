@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ButtonBar?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+
+<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="780.0" prefWidth="1212.0" style="-fx-background-color: #95B1EE;" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controllers.PageFlightsUser">
+    <children>
+        <TableView fx:id="infoTable" layoutX="31.0" layoutY="82.0" prefHeight="469.0" prefWidth="1150.0" style="-fx-background-color: #364C84;">
+            <columns>
+                <TableColumn fx:id="idFlightColumn" maxWidth="220.0" prefWidth="82.0" text="Id" />
+            <TableColumn fx:id="nameAircraftColumn" minWidth="0.0" prefWidth="204.0" text="Имя самолета" />
+                <TableColumn fx:id="flightNumberColumn" prefWidth="153.0" text="Номер самолета" />
+            <TableColumn fx:id="departureAirportColumn" prefWidth="186.0" text="Аэропорт отправления" />
+            <TableColumn fx:id="arrivalAirportColumn" prefWidth="193.0" text="Аэропорт прибытия" />
+            <TableColumn fx:id="departureTimeColumn" minWidth="0.0" prefWidth="153.0" text="Время отправления" />
+            <TableColumn fx:id="arrivalTimeColumn" minWidth="0.0" prefWidth="178.0" text="Время прибытия" />
+            </columns>
+        </TableView>
+      <Button fx:id="backToMenuButton" layoutX="416.0" layoutY="564.0" mnemonicParsing="false" prefHeight="50.0" prefWidth="350.0" style="-fx-background-radius: 15;" text="Вернуться в меню пользователя">
+         <font>
+            <Font size="17.0" />
+         </font>
+      </Button>
+      <ButtonBar layoutX="162.0" layoutY="708.0" prefHeight="50.0" prefWidth="859.0">
+         <buttons>
+            <Button fx:id="searchButton" mnemonicParsing="false" prefHeight="50.0" prefWidth="250.0" style="-fx-background-radius: 15;" text="Поиск">
+               <font>
+                  <Font size="17.0" />
+               </font>
+            </Button>
+            <TextField fx:id="searchField" prefHeight="45.0" prefWidth="271.0" promptText="Поиск по номеру самолета..." />
+            <Button fx:id="showButton" mnemonicParsing="false" prefHeight="50.0" prefWidth="250.0" style="-fx-background-radius: 15;" text="Вывести">
+               <font>
+                  <Font size="17.0" />
+               </font>
+            </Button>
+         </buttons>
+      </ButtonBar>
+      <Label layoutX="133.0" layoutY="27.0" prefHeight="35.0" prefWidth="283.0" text="Ваш текущий баланс:">
+         <font>
+            <Font name="CentSchbkCyrill BT Bold" size="24.0" />
+         </font>
+      </Label>
+      <TextField fx:id="balanceField" layoutX="435.0" layoutY="27.0" prefHeight="35.0" prefWidth="250.0" promptText="Баланс" />
+      <ButtonBar layoutX="327.0" layoutY="646.0" prefHeight="50.0" prefWidth="529.0">
+         <buttons>
+            <Button fx:id="buyTicket" mnemonicParsing="false" prefHeight="50.0" prefWidth="250.0" style="-fx-background-radius: 15;" text="Купить билет">
+               <font>
+                  <Font size="17.0" />
+               </font>
+            </Button>
+            <Button fx:id="addBalance" mnemonicParsing="false" prefHeight="50.0" prefWidth="250.0" style="-fx-background-radius: 15;" text="Пополнить баланс">
+               <font>
+                  <Font size="17.0" />
+               </font>
+            </Button>
+         </buttons>
+      </ButtonBar>
+    </children>
+</Pane>

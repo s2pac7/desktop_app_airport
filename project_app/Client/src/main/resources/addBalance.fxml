@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane prefHeight="600.0" prefWidth="500.0" style="-fx-background-color: #B0C4DE; -fx-border-radius: 20px;" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controllers.AddMoneyController">
+   <children>
+      <Button fx:id="addMoneyButton" layoutX="75.0" layoutY="455.0" mnemonicParsing="false" prefHeight="60.0" prefWidth="350.0" style="-fx-background-color: #ADD8E6; -fx-border-color: #1E90FF; -fx-border-radius: 5;" text="Добавить">
+         <font>
+            <Font size="28.0" />
+         </font>
+      </Button>
+      <Button fx:id="backButton" layoutX="75.0" layoutY="526.0" mnemonicParsing="false" prefHeight="60.0" prefWidth="350.0" style="-fx-background-color: #ADD8E6; -fx-border-color: #1E90FF; -fx-border-radius: 5;" text="Выйти">
+         <font>
+            <Font size="28.0" />
+         </font>
+      </Button>
+      <Text layoutX="135.0" layoutY="43.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Пополнение счета">
+         <font>
+            <Font name="Book Antiqua Italic" size="27.0" />
+         </font>
+      </Text>
+      <ImageView fitHeight="290.0" fitWidth="500.0" layoutX="17.0" layoutY="67.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@com/example/client/bank.jpg" />
+         </image>
+      </ImageView>
+      <TextField fx:id="numbersBank" layoutX="57.0" layoutY="225.0" prefHeight="51.0" prefWidth="334.0" promptText="XXXX    XXXX    XXXX    XXXX">
+         <font>
+            <Font size="24.0" />
+         </font>
+      </TextField>
+      <TextField fx:id="cardМalidity" layoutX="203.0" layoutY="276.0" prefHeight="36.0" prefWidth="103.0" promptText="XX/XX" />
+      <TextField fx:id="sumMoney" layoutX="90.0" layoutY="372.0" prefHeight="51.0" prefWidth="320.0" promptText="Сумма пополнения" />
+   </children>
+</AnchorPane>

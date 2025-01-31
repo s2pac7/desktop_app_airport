@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane prefHeight="700.0" prefWidth="1211.0" style="-fx-background-color: #B0C4DE;" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controllers.AutorizationController">
+   <children>
+      <AnchorPane layoutX="1.0" prefHeight="527.0" prefWidth="522.0">
+         <children>
+            <ImageView fitHeight="700.0" fitWidth="608.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@com/example/client/catPilot.png" />
+               </image>
+            </ImageView>
+         </children>
+      </AnchorPane>
+      <Text layoutX="677.0" layoutY="87.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Авторизация" wrappingWidth="466.7421875">
+         <font>
+            <Font name="Cambria Italic" size="69.0" />
+         </font>
+      </Text>
+      <TextField fx:id="loginField" layoutX="654.0" layoutY="175.0" prefHeight="49.0" prefWidth="467.0" promptText="Логин">
+         <font>
+            <Font size="16.0" />
+         </font>
+      </TextField>
+      <PasswordField fx:id="passwordField" layoutX="654.0" layoutY="251.0" prefHeight="49.0" prefWidth="467.0" promptText="Пароль">
+         <font>
+            <Font size="16.0" />
+         </font>
+      </PasswordField>
+      <Button fx:id="enterButton" layoutX="654.0" layoutY="320.0" mnemonicParsing="false" prefHeight="32.0" prefWidth="467.0" style="-fx-background-color: #ADD8E6; -fx-border-color: #1E90FF; -fx-border-radius: 5;" text="Войти">
+         <font>
+            <Font size="28.0" />
+         </font>
+      </Button>
+      <Button fx:id="registrationButton" layoutX="654.0" layoutY="396.0" mnemonicParsing="false" prefHeight="60.0" prefWidth="467.0" style="-fx-background-color: #ADD8E6; -fx-border-color: #1E90FF; -fx-border-radius: 5;" text="Регистрация">
+         <font>
+            <Font size="28.0" />
+         </font>
+      </Button>
+   </children>
+</AnchorPane>

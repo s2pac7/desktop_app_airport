@@ -1,0 +1,113 @@
+=== Ticket Report ===
+Flight ID: 7
+Passenger ID: 11
+Seat: 14
+Class: ECONOMY
+Price: 587.00
+Status: Сlosed
+---------------------------
+Flight ID: 6
+Passenger ID: 11
+Seat: 5
+Class: ECONOMY
+Price: 612.00
+Status: Closed
+---------------------------
+Flight ID: 1
+Passenger ID: 11
+Seat: 17
+Class: ECONOMY
+Price: 827.00
+Status: Closed
+---------------------------
+Flight ID: 3
+Passenger ID: 11
+Seat: 5
+Class: ECONOMY
+Price: 691.00
+Status: Closed
+---------------------------
+Flight ID: 5
+Passenger ID: 17
+Seat: 18
+Class: ECONOMY
+Price: 560.00
+Status: Closed
+---------------------------
+Flight ID: 6
+Passenger ID: 11
+Seat: 11
+Class: ECONOMY
+Price: 793.00
+Status: cancel
+---------------------------
+Flight ID: 9
+Passenger ID: 11
+Seat: 18
+Class: ECONOMY
+Price: 700.00
+Status: Closed
+---------------------------
+Flight ID: 7
+Passenger ID: 11
+Seat: 16
+Class: ECONOMY
+Price: 656.00
+Status: Closed
+---------------------------
+Flight ID: 9
+Passenger ID: 11
+Seat: 11
+Class: ECONOMY
+Price: 575.00
+Status: Closed
+---------------------------
+Flight ID: 4
+Passenger ID: 11
+Seat: 14
+Class: ECONOMY
+Price: 744.00
+Status: Closed
+---------------------------
+Flight ID: 6
+Passenger ID: 11
+Seat: 18
+Class: ECONOMY
+Price: 792.00
+Status: Closed
+---------------------------
+Flight ID: 6
+Passenger ID: 11
+Seat: 16
+Class: ECONOMY
+Price: 824.00
+Status: Closed
+---------------------------
+Flight ID: 7
+Passenger ID: 11
+Seat: 8
+Class: ECONOMY
+Price: 598.00
+Status: Cancel
+---------------------------
+Flight ID: 6
+Passenger ID: 11
+Seat: 2
+Class: BUSINESS
+Price: 529.00
+Status: Cancel
+---------------------------
+Flight ID: 12
+Passenger ID: 11
+Seat: 2
+Class: BUSINESS
+Price: 632.00
+Status: Closed
+---------------------------
+Flight ID: 12
+Passenger ID: 11
+Seat: 5
+Class: BUSINESS
+Price: 786.00
+Status: Closed
+---------------------------

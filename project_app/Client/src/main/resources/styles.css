@@ -1,0 +1,8 @@
+.table-row-cell:selected {
+    -fx-background-color: #add8e6; /* Нежно-синий цвет */
+    -fx-text-fill: -fx-text-base-color;
+}
+
+.table-row-cell:selected:focused {
+    -fx-background-color: #add8e6; /* Нежно-синий цвет */
+}

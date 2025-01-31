@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ButtonBar?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+
+<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="780.0" prefWidth="1212.0" style="-fx-background-color: #95B1EE;" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controllers.PageTicketsAdmin">
+    <children>
+        <TableView fx:id="infoTableTicket" layoutX="31.0" layoutY="20.0" prefHeight="565.0" prefWidth="1150.0" style="-fx-background-color: #364C84;">
+            <columns>
+            <TableColumn fx:id="ticketIdColumn" prefWidth="157.0" text="Id билета" />
+            <TableColumn fx:id="flightIdColumn" prefWidth="137.0" text="Id рейса" />
+            <TableColumn fx:id="passengerIdColumn" prefWidth="160.0" text="Id пассажира" />
+            <TableColumn fx:id="seatsColumn" minWidth="0.0" prefWidth="195.0" text="Место в самолете" />
+                <TableColumn fx:id="classSeatColumn" prefWidth="129.0" text="Класс" />
+            <TableColumn fx:id="priceColumn" prefWidth="200.0" text="Цена за билет" />
+            <TableColumn fx:id="statusColumn" minWidth="0.0" prefWidth="171.0" text="Статус билета" />
+            </columns>
+        </TableView>
+      <Button fx:id="backToMenuButton" layoutX="432.0" layoutY="626.0" mnemonicParsing="false" prefHeight="50.0" prefWidth="350.0" style="-fx-background-radius: 15;" text="Вернуться в меню пользователя">
+         <font>
+            <Font size="17.0" />
+         </font>
+      </Button>
+      <ButtonBar layoutX="208.0" layoutY="692.0" prefHeight="57.0" prefWidth="796.0">
+         <buttons>
+            <Button fx:id="showButton" mnemonicParsing="false" prefHeight="50.0" prefWidth="250.0" style="-fx-background-radius: 15;" text="Вывести">
+               <font>
+                  <Font size="17.0" />
+               </font>
+            </Button>
+            <Button fx:id="cancelButton" mnemonicParsing="false" prefHeight="50.0" prefWidth="250.0" style="-fx-background-radius: 15;" text="Отменить билет">
+               <font>
+                  <Font size="17.0" />
+               </font>
+            </Button>
+            <Button fx:id="createReportButton" mnemonicParsing="false" prefHeight="50.0" prefWidth="250.0" style="-fx-background-radius: 15;" text="Сделать отчет">
+               <font>
+                  <Font size="17.0" />
+               </font>
+            </Button>
+         </buttons>
+      </ButtonBar>
+    </children>
+</Pane>

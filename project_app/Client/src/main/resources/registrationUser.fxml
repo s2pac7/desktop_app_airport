@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.String?>
+<?import javafx.collections.FXCollections?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.DatePicker?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane prefHeight="700.0" prefWidth="1211.0" style="-fx-background-color: #B0C4DE;" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controllers.RegistrationUserController">
+    <children>
+        <Text layoutX="414.0" layoutY="80.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Регистрация" wrappingWidth="417.7421875">
+            <font>
+                <Font name="Cambria Italic" size="69.0" />
+            </font>
+        </Text>
+        <TextField fx:id="nameField" layoutX="107.0" layoutY="142.0" prefHeight="49.0" prefWidth="467.0" promptText="Имя">
+            <font>
+                <Font size="16.0" />
+            </font>
+        </TextField>
+        <Button fx:id="backRegButton" layoutX="107.0" layoutY="613.0" mnemonicParsing="false" prefHeight="32.0" prefWidth="467.0" style="-fx-background-color: #ADD8E6; -fx-border-color: #1E90FF; -fx-border-radius: 5;" text="Назад">
+            <font>
+                <Font size="28.0" />
+            </font>
+        </Button>
+        <Button fx:id="completeReg" layoutX="667.0" layoutY="613.0" mnemonicParsing="false" prefHeight="60.0" prefWidth="467.0" style="-fx-background-color: #ADD8E6; -fx-border-color: #1E90FF; -fx-border-radius: 5;" text="Завершить регистрацию">
+            <font>
+                <Font size="28.0" />
+            </font>
+        </Button>
+        <TextField fx:id="surnameField" layoutX="667.0" layoutY="142.0" prefHeight="49.0" prefWidth="467.0" promptText="Фамилия">
+            <font>
+                <Font size="16.0" />
+            </font>
+        </TextField>
+        <TextField fx:id="passportNumberField" layoutX="107.0" layoutY="212.0" prefHeight="49.0" prefWidth="467.0" promptText="Номер паспорта">
+            <font>
+                <Font size="16.0" />
+            </font>
+        </TextField>
+        <DatePicker fx:id="dateOfBirthField" layoutX="668.0" layoutY="212.0" prefHeight="49.0" prefWidth="467.0" promptText="Дата рождения" />
+        <!-- Выпадающий список с кодами стран -->
+        <ComboBox fx:id="countryCodeBox" layoutX="439.0" layoutY="287.0" prefHeight="49.0" prefWidth="100.0">
+            <items>
+                <FXCollections fx:factory="observableArrayList">
+                    <String fx:value="+375 (Беларусь)" />
+                    <String fx:value="+7 (Россия)" />
+                </FXCollections>
+            </items>
+        </ComboBox>
+        <!-- Поле ввода номера телефона -->
+        <TextField fx:id="maskedPhoneField" layoutX="539.0" layoutY="287.0" prefHeight="49.0" prefWidth="357.0" promptText="(XX) XXX-XXXX">
+            <font>
+                <Font size="16.0" />
+            </font>
+        </TextField>
+    </children>
+</AnchorPane>

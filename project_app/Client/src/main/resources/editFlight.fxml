@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.DatePicker?>
+<?import javafx.scene.control.RadioButton?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane prefHeight="682.0" prefWidth="641.0" style="-fx-background-color: #B0C4DE; -fx-border-radius: 20px;" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controllers.EditFlightController">
+   <children>
+
+      <Button fx:id="editFlightButton" layoutX="75.0" layoutY="512.0" mnemonicParsing="false" prefHeight="60.0" prefWidth="350.0" style="-fx-background-color: #ADD8E6; -fx-border-color: #1E90FF; -fx-border-radius: 5;" text="Редактировать">
+         <font>
+            <Font size="28.0" />
+         </font>
+      </Button>
+
+      <Button fx:id="backButton" layoutX="75.0" layoutY="588.0" mnemonicParsing="false" prefHeight="60.0" prefWidth="350.0" style="-fx-background-color: #ADD8E6; -fx-border-color: #1E90FF; -fx-border-radius: 5;" text="Выйти">
+         <font>
+            <Font size="28.0" />
+         </font>
+      </Button>
+
+      <Text layoutX="109.0" layoutY="43.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Редактирование рейса">
+         <font>
+            <Font name="Book Antiqua Italic" size="27.0" />
+         </font>
+      </Text>
+
+      <VBox layoutX="91.0" layoutY="65.0" prefHeight="427.0" prefWidth="318.0">
+         <children>
+
+            <ComboBox fx:id="aircraftCombo" prefHeight="50.0" prefWidth="400.0" promptText="Имя самолета">
+               <VBox.margin>
+                  <Insets top="10.0" />
+               </VBox.margin>
+            </ComboBox>
+
+            <TextField fx:id="editFlightNumberField" prefHeight="50.0" prefWidth="400.0" promptText="Номер самолета">
+               <font>
+                  <Font size="16.0" />
+               </font>
+               <VBox.margin>
+                  <Insets top="10.0" />
+               </VBox.margin>
+            </TextField>
+            <HBox prefHeight="28.0" prefWidth="318.0">
+               <children>
+                  <RadioButton fx:id="fromDirectionRadioButton" prefHeight="17.0" prefWidth="180.0" text="Оттуда">
+                     <font>
+                        <Font size="15.0" />
+                     </font>
+                  </RadioButton>
+      
+                  <!-- Радиокнопки -->
+                  <RadioButton fx:id="toDirectionRadioButton" prefHeight="17.0" prefWidth="183.0" text="Туда">
+                     <font>
+                        <Font size="15.0" />
+                     </font>
+                  </RadioButton>
+               </children>
+               <VBox.margin>
+                  <Insets top="15.0" />
+               </VBox.margin>
+            </HBox>
+
+            <TextField fx:id="editDepartureAirportField" prefHeight="50.0" prefWidth="400.0" promptText="Аэропорт отправления">
+               <font>
+                  <Font size="16.0" />
+               </font>
+               <VBox.margin>
+                  <Insets top="10.0" />
+               </VBox.margin>
+            </TextField>
+
+            <TextField fx:id="editArrivalAirportField" prefHeight="50.0" prefWidth="400.0" promptText="Аэропорт прибытия">
+               <font>
+                  <Font size="16.0" />
+               </font>
+               <VBox.margin>
+                  <Insets top="10.0" />
+               </VBox.margin>
+            </TextField>
+
+            <DatePicker fx:id="editDepartureDatePicker" prefHeight="50.0" prefWidth="400.0" promptText="Дата отправления и время">
+               <VBox.margin>
+                  <Insets top="10.0" />
+               </VBox.margin>
+            </DatePicker>
+
+            <DatePicker fx:id="editArrivalDatePicker" prefHeight="50.0" prefWidth="400.0" promptText="Дата прибытия и время">
+               <VBox.margin>
+                  <Insets top="10.0" />
+               </VBox.margin>
+            </DatePicker>
+         </children>
+      </VBox>
+      <TextField fx:id="editArrivalTimeField" layoutX="425.0" layoutY="419.0" prefHeight="50.0" prefWidth="168.0" promptText="Время прибытия">
+         <font>
+            <Font size="16.0" />
+         </font>
+      </TextField>
+      <TextField fx:id="editDepartureTimeField" layoutX="425.0" layoutY="360.0" prefHeight="50.0" prefWidth="168.0" promptText="Время отправления">
+         <font>
+            <Font size="16.0" />
+         </font>
+      </TextField>
+   </children>
+</AnchorPane>
